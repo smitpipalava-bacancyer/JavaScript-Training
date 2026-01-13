@@ -1,0 +1,35 @@
+when i do this stuff 
+let num = document.getElementById("User_Num").value;
+
+and runs the logic to check whether the number is +ve , -ve or 0 then it didn't run.
+
+Reason :-
+
+when browser render the html page at that time js is also rendered and it reads the value from the input value and then it stores "" in the num...
+
+so when i run the if else or switch case then the condition looks like this
+
+"" == 0 
+"" > 0
+"" < 0 
+
+and same it for the switch case ...
+
+
+NOTE :- JavaScript does not auto-update variables when the DOM changes.
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------
+
+One more thing is that suppose we take the input type="text" 
+
+then first we need to convert it into the number so for that there are 2 methods ...
+
+let x = Number(num.value);
+let x = parseInt(num.value);

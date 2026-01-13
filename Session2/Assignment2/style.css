@@ -1,0 +1,86 @@
+<<<<<<< HEAD
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+section{
+    display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px black;
+}
+
+span{
+    font-size: larger;
+}
+
+#result{
+    font-size: larger;
+    color: red;
+    height: 20rem;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 1rem;
+=======
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+section{
+    display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px black;
+}
+
+span{
+    font-size: larger;
+}
+
+#result{
+    font-size: larger;
+    color: red;
+    height: 20rem;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 1rem;
+>>>>>>> bd5c800 (Date : 13/01/2026 Session 2 => Assignment 3,4,5  uploaded)
+}
