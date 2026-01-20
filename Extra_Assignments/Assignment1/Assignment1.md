@@ -100,12 +100,11 @@
 - c) reduce  
 - d) forEach  
 
-**Correct Answer:** d) forEach  
+**Correct Answer:** None of the above.  
 
 **Reason:**  
-- `map()`, `filter()`, `reduce()` → return new values  
-- `forEach()` → does not return anything and is commonly used to mutate the original array
-
+map filter and reduce generate the new array and return it meanwhile forEach just transforming the data.
+we can change in the original array using index which we passing in the parameter by this way we can change the array ..
 ---
 
 ### 11. What is a shallow copy? ✅ Correct
