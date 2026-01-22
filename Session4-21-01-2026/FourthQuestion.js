@@ -1,4 +1,5 @@
 let original = {
+    Title : "Question - 4",
     Details: {
         FullName: {
             FirstName: "SMIT",
@@ -11,20 +12,42 @@ let original = {
         [4, 5, 6],
         [7, 8, 9]
     ],
-    login(){
+    loginFun : function(){
         console.log("USER HAS BEEN LOGGED!!");  
     }
 }
 
-function masterClone(obj) {
-    let cloneObj = {};
 
-    // for (const key in obj) {
-    //     if (!Object.hasOwn(obj, key)) return;
-        
-    //     const element = obj[key];
-    //     console.log(element);
-    // }
+function masterClone(obj){
+    if(obj == null || typeof obj !== "object"){
+        return obj;
+    }
+
+    // handle array
+    if(Array.isArray(obj)){
+        let newArr = [];
+
+        for (const element of obj) {
+            newArr.push(masterClone(element));
+        }
+        return newArr;
+    }
+
+    // handle object
+    let newObj = {};
+    for (let key in obj) {
+        newObj[key] = masterClone(obj[key]);
+    }
+    return newObj;
 }
 
-masterClone(original);
+let CloneObject = masterClone(original);
+
+console.log(original);
+CloneObject.Title = "Sucessfull Coded";
+CloneObject.Details.FullName.FirstName="Vishv";
+CloneObject.Details.FullName.MiddleName="Mansukhbhai";
+CloneObject.Details.FullName.LastName="Patel";
+console.log("SO THE CLONE OBJECT IS BEFORE:",CloneObject);
+
+console.log(CloneObject.loginFun == original.loginFun);
