@@ -48,3 +48,4 @@ Run and write the actual order
 
 **Explanation:**
 ```first synchronous line of the code executed and then all other code of line will be executed . now there are 2 types of queue microqueue and macroqueue and microqueue has a higher priority then macroqueue .. so first it executed and then macroqueue tasks will be executed.. so promise goes to the microqueue and setTimeout goes to the macroqueue. after when callstack becomes empty then all the tasks from queue comes and executed as per the priority which is mentioned before.
+```

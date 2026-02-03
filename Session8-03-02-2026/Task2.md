@@ -1,7 +1,3 @@
-// Explain the execution order
-```
-
-
 ### Code Block 2: Nested Async
 
 
